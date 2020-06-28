@@ -1,0 +1,12 @@
+﻿<Window x:Class="ToggleExplorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToggleExplorer"
+        mc:Ignorable="d"
+        Title="ToggleExplorer by TheNetWyvern v1.0" Height="200" Width="400" Closed="Window_Closed" ResizeMode="CanMinimize">
+    <Grid>
+        <Button Name="ToggleExplorerProcess" Content="Переключить Explorer" Margin="29" FontSize="16" Click="ToggleExplorerProcess_Click"></Button>
+    </Grid>
+</Window>
