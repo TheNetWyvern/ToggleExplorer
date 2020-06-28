@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToggleExplorer"
         mc:Ignorable="d"
-        Title="ToggleExplorer by TheNetWyvern v1.0" Height="200" Width="400" Closed="Window_Closed" ResizeMode="CanMinimize">
+        Title="ToggleExplorer by TheNetWyvern v2.0" Height="200" Width="400" Closed="Window_Closed" ResizeMode="CanMinimize" WindowState="Minimized">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/logo.png"/>
+    </Window.Background>
     <Grid>
-        <Button Name="ToggleExplorerProcess" Content="Переключить Explorer" Margin="29" FontSize="16" Click="ToggleExplorerProcess_Click"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="2*"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Name="ToggleExplorerProcess" Grid.Row="1" Content="Toggle Explorer" FontSize="16" Click="ToggleExplorerProcess_Click" Background="{x:Null}" FontFamily="Arial" Grid.IsSharedSizeScope="True" Foreground="#FF630000" BorderBrush="#00707070" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
