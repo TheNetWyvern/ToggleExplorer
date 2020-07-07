@@ -71,5 +71,11 @@ namespace ToggleExplorer
                 Process.Start($"{System.IO.Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.System))}/explorer.exe");
             }
         }
+
+        private void Window_Deactivated(object sender, EventArgs e)
+        {
+            Topmost = false; // set topmost false first
+            Topmost = true; // then set topmost true again.
+        }
     }
 }
