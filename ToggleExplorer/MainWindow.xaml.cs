@@ -49,7 +49,7 @@ namespace ToggleExplorer
             Process[] processes = Process.GetProcessesByName("explorer");
             if (processes.Count() > 0)
             {
-                Thread.Sleep(30000);
+                Thread.Sleep(TimeSpan.FromSeconds(30));
                 foreach (Process process in processes)
                 {
                     // process.Close();
